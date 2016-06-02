@@ -4,37 +4,32 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="http://ec2-52-31-177-160.eu-west-1.compute.amazonaws.com/" />
-<title>login</title>
+<title>searchcoupon</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">login</td></tr>
+<tr><td rowspan="1" colspan="3">searchcoupon</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/open-eshop-2.0.1/oc-panel/auth/login</td>
+	<td>/open-eshop-2.0.1/oc-panel/Coupon</td>
 	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>css=input.form-control[name='email']</td>
-	<td>demo@open-eshop.com</td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>css=input.form-control[name='password']</td>
-	<td>demo</td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>css=button/btn-btn-primary[type='submit']</td>
-	<td></td>
+	<td>css=button.btn</td>
+	<td>Search</td>
 </tr>
 <tr>
-	<td>assertText</td>
-	<td>css=h1</td>
-	<td>Welcome admin</td>
+	<td>type</td>
+	<td>name=name</td>
+	<td>Dance Shop</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn</td>
+	<td>Search</td>
 </tr>
 </tbody></table>
 </body>
